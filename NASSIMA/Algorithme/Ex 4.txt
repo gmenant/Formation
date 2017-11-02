@@ -1,0 +1,28 @@
+
+VAR
+i <entier>
+Taille <entier>
+Min <entier>
+Max <entier>
+
+TABLEAU <tab>[Taille]<entier>
+
+DEBUT
+Min = tab [0]
+Max = tab [0]
+
+
+
+POUR i=1 A Taille-1 Faire
+	
+	if Tab[i]<Min	
+ 	Min=tab[i]
+else
+	if Tab[i]>Max	
+ 	Max=tab[i]
+	
+Fin Pour
+
+	ecrire Min, Max
+	
+FIN

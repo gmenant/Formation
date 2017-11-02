@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>FLEXBOX</title>
+<style type="text/css">
+
+body {
+  margin:0;
+  padding:10px 40px;
+  background:#fff;
+  font-size: 1.4em;
+  font-family: helvetica, arial, serif;
+}
+h1 {
+  color: #345;
+  text-shadow: 1px 1px 2px #aaa;
+  font-size:1.8em;
+}
+h2 {
+  color: #678;
+  text-shadow: 1px 1px 2px #aaa;
+  font-size:1.1em
+}
+.kiwi {
+  display:flex;
+  flex-wrap:wrap;
+  width: 80%;
+  outline: 1px solid #333;
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
+li {
+  color: #fff;
+  padding: 10px;
+  list-style: none;
+  background: tomato
+}
+li:nth-child(2) {background: orange}
+li:nth-child(3) {background: #800000}
+li:nth-child(4) {background: #FF3399}
+li:nth-child(5) {background: #3399FF}
+
+</style>
+</head>
+<body>
+<h1>Modèle brut : exemple300.html</h1>
+	<ul class="kiwi">
+		<li>Salade</li>
+		<li>Tomate</li>
+		<li>Oignons</li>
+		<li>Choucroute</li>
+		<li>Picon bière</li>
+	</ul>
+</body>
+</html>

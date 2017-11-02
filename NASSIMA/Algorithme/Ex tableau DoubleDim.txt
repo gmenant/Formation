@@ -1,0 +1,52 @@
+ALGORITHME
+
+VARIABLES
+	M reel
+	N reel
+	somme reel
+	somme_matiere reel
+	somme_eleve reel
+	moyenne_eleve reel
+	moyenne_matiere reel
+TABLEAU
+	tab[N+1,M+1] reel
+
+DEBUT
+	ECRIRE ("Entrez le nombre d'étudiant")
+	LIRE (N)
+	ECRIRE ("Entrez les noms des étudiants")
+	  POUR j=1 A N-1 FAIRE
+	  LIRE tab[i,0]
+	  FIN POUR
+	
+	ECRIRE ("Entrez le nombre de Matières")
+	LIRE (M)
+	ECRIRE ("Ecrire le nom des matières")
+	  POUR i=1 A M-1 FAIRE
+	  LIRE tab[0,j]
+ 	  FIN POUR
+
+
+
+
+POUR i=1 A N FAIRE
+  POUR j=1 A M FAIRE
+ 	LIRE tab[i,j]
+	somme_eleve = somme_eleve + tab [i,j]
+  FIN POUR
+ 	moyenne_eleve = somme_eleve /M
+ 	tab[i,M+1]= moyenne_eleve
+FIN POUR
+
+
+
+POUR j=1 A M FAIRE
+ POUR i=1 A N FAIRE
+	somme_matiere = somme_matiere + tab [i,j]
+ FIN POUR
+	moyenne_matiere = somme_matiere /N
+	tab[M+1,j]= moyenne_matiere 
+FIN POUR
+
+
+FIN

@@ -1,0 +1,34 @@
+Saisissez des valeurs
+Mettre dans  un tableau
+
+Entrez le nombre de valeurs que vous comptez rentrer
+
+
+Afficher le nombre d evaleurs negatives
+
+ALGORITHME
+VARIABLES
+	
+	Taille : Reel
+	Negatif : Reel
+	Positif : Reel
+TABLEAU
+	tab[Taille] Reel
+
+DEBUT
+	ECRIRE ("Entrez le nombre de valeurs que vous comptez rentrer")
+	LIRE (Taille)
+	
+	POUR i=0 A Taille-1 FAIRE
+		ECRIRE ("Entrez une note")
+		LIRE(Tab[i])
+		SI Tab[i]<0
+		 	Negatif= Negatif +1	
+		ELSE
+			Positif = Positif +1
+		FIN SI	
+	FIN POUR
+	
+	Ecrire ("il y a ",Negatif," valeures négatives et ",Positif,"positives.")
+
+FIN	 

@@ -1,0 +1,103 @@
+﻿/* Mastermind.css */
+
+		* {margin:0 auto 0;
+			text-align:center;
+			align:center;}
+		div.conteneur {	width:410px;}
+			
+	/* contrôles des couleurs */
+		div#control{margin-left:40px;
+					width:40px;}
+		
+		input[type=radio] {display:none} 
+		
+		label, .gc {display:inline-block;
+			margin:0 5px;
+			height:20px;
+			width:20px;
+			border:1px solid black;
+			border-radius:20px;}
+			
+		#rg:checked~label#lblrg, #bl:checked~label#lblbl, #ja:checked~label#lblja, #ve:checked~label#lblve,
+		#or:checked~label#lblor, #cy:checked~label#lblcy {height:17px; width:17px; border:3px solid black;}
+
+		#lblrg, .rg {background:radial-gradient(farthest-side ellipse at top left, white 10%, red);}
+		#lblbl, .bl {background:radial-gradient(farthest-side ellipse at top left, white 10%, blue);}
+		#lblja, .ja {background:radial-gradient(farthest-side ellipse at top left, white 10%, yellow);}
+		#lblve, .ve {background:radial-gradient(farthest-side ellipse at top left, white 10%, green);}
+		#lblor, .or {background:radial-gradient(farthest-side ellipse at top left, white 10%, orange);}
+		#lblcy, .cy {background:radial-gradient(farthest-side ellipse at top left, white 10%, cyan);}
+		
+	/* contrôles actions */
+		div#ctrl {width:100px;
+			margin-top:-480px;
+			margin-right:0;}
+		#ctrl input {width:99px;}
+	
+	/* fiches */
+		.pc {display:inline-block;
+			margin:2px 4px;
+			padding:0px;
+			height:7px;
+			width:7px;
+			border:1px solid black;
+			border-radius:7px;}
+
+		.noir {background:radial-gradient(farthest-side ellipse at top left, grey 10%, black);}
+		.blanc {background:radial-gradient(farthest-side ellipse at top left, white 30%, grey);}
+
+	/* tableau de jeu */
+		table {border:1px solid black;
+			background-color:brown;
+			border-radius:10px;}
+			
+		table#jeu {width:200px;
+		margin-top:-160px;}
+		
+		td {border:1px solid black;}
+
+/* boîte modale des instructions */
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity: 0;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+
+        .modalDialog:target {
+                opacity: 1;
+                pointer-events: auto;
+            }
+
+        .modalDialog > div {
+                width: 400px;
+                position: relative;
+                margin: 10% auto;
+                padding: 5px 20px 13px 20px;
+                border-radius: 10px;
+                background: linear-gradient(#fff, #999);
+            }
+
+        .fermer {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 1px 1px 3px #000;
+        }
+
+        .fermer:hover {background: #00d9ff;}

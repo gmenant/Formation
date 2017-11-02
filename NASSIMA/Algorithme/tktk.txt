@@ -1,0 +1,7 @@
+sup = 0
+POUR i=0 A Max_i FAIRE
+ POUR j=0 A Max_j FAIRE
+  SI tab[i,j]>sup
+	FAIRE sup=tab[i,j]
+ FIN POUR
+FIN POUR

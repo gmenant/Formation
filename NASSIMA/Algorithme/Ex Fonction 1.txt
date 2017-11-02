@@ -1,0 +1,9 @@
+FONCTION Plus_grand (a:reel,b:reel) : reel
+
+DEBUT
+	if(a<b)
+	 RETURN B
+	else
+	 RETURN A
+	FIN DE SI
+FIN

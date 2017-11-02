@@ -1,0 +1,14 @@
+FONCTION Rep (REPONSE: Chaine de charac) : Chaine de charac
+
+DEBUT
+ Ecrire "Etes vous marié ?"
+ Lire REPONSE 
+ TANT QUE  REPONSE != Non OU REPONSE != Oui
+  Ecrire("Etes-vous marié ?")
+  Lire REPONSE 
+ FIN IF
+FIN
+
+
+
+/////////////////////////////////////////////////

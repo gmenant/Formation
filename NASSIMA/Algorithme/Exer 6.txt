@@ -1,0 +1,33 @@
+Algorithme
+Variables
+	Somme : Reels
+	Taille : Entier
+	Moyenne : Entier
+	Compteur : Entier
+Tableau
+	Tableau Tab[Taille]Reels
+
+DEBUT
+	Compteur = 0
+	Somme = 0
+
+
+	ECRIRE ("Quel estle nombre de notes à entrer")
+	LIRE (Taille)
+
+	POUR i=0 A Taille-1
+		ECRIRE ("Entrez une note")
+		LIRE(Tab[i])
+		Somme = Somme+Tab[i]
+	FIN POUR
+		
+		Moyenne = Somme / Taille
+		
+	POUR i=0 A Taille-1
+		IF Tab[i]>Moyenne
+		Compteur=Compteur+1
+		Ecrire ("Il y a ",Compteur," supérieurs à la moyenne")
+	FIN POUR
+
+
+FIN

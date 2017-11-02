@@ -1,0 +1,86 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Titre de la page HTML</title>
+  <meta name="robots" content="all" />
+  <meta name="description" content="Modèle" />
+  <meta name="author" content="DL2017-2018" />
+  <!--		<link href="styles.css" rel="stylesheet">
+				<script type="text/javascript" src="scripts.js"></script>-->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <style type="text/css">
+    /* Mes feuilles de style  */
+
+    td {
+      background-color: wheat;
+      width: 50px;
+      height: 20px;
+      text-align: center;
+    }
+    .ro {
+      background-color: #fddbdb;
+
+    }
+    .in {
+      background-color: #d0c527;
+    }
+    .bc {
+      background-color: #1eb8c3;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      1 of 2
+    </div>
+    <div class="col">
+      2 of 2
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      1 of 3
+    </div>
+    <div class="col">
+      2 of 3
+    </div>
+    <div class="col">
+      3 of 3
+    </div>
+  </div>
+</div>
+  <table>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td colspan="2" class ="in">34</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td rowspan="2" class ="bc">611</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+
+      <td>12</td>
+      <td colspan="3" rowspan="2" class="ro">13 - 14 - 15<br>18 - 19 - 20</td>
+
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>17</td>
+
+    </tr>
+  </table>
+</body>
+
+</html>

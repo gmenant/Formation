@@ -1,0 +1,71 @@
+
+Ex1
+
+FONCTION aucarre(N)
+
+SI (N < 0)
+
+ALORS retourner ("C'est un nombre negatif")
+
+SINON retourner aucarre(N-1)(+2(N-1)+1)
+
+FIN SI
+
+
+
+
+
+____________________________________________________________________
+
+Ex2
+
+Fonction somme(N)
+SI N = 0 
+ALORS retourner 0
+SINON retourner (somme(N-1) +N)
+FIN SI
+
+
+
+_____________________________________________________________________
+
+Ex3
+FONCTION fib(n)
+DEBUT
+	SI (n=1 ou n=0) ALORS retourner (1)
+	ELSE 
+	RETURN (fib(n-1)+fib(n-2))
+	FIN SI
+
+FIN
+
+____________________________________________________________________
+
+Ex4 palindrome
+
+FONCTION
+
+VARIABLES
+i=0
+TABLEAU
+tab[]
+
+DEBUT
+
+POUR i=0 A FIN/2
+
+	IF tab[i] =! tab[FIN-1]
+	RETOURNER ("C'est pas un palindrome")
+	ELSE 
+	RETOURNER ("c'est ok, cest un palindrome")
+
+FIN POUR
+
+
+
+
+
+
+fonction palindrome(tab[N])
+
+

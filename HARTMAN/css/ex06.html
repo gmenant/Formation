@@ -1,0 +1,82 @@
+<html>
+<head>
+ <meta charset="UTF-8">
+<meta http-equiv="content-language" content="fr-FR"/>
+<style type="text/css">
+#monmenu {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+}
+#monmenu ul ul{
+  display:none;
+  position:absolute;
+  margin:0px;
+  padding: 0px;
+}
+#monmenu ul.niveau2 {
+  left: 0px;
+  top:21px;
+}
+#monmenu ul.niveau3 {
+
+  left: 144px;
+  top:0px;
+}
+#monmenu li{
+  list-style-type:none;
+  position:relative;
+  width: 140px;
+  background-color:#f1f1f1;
+  padding:2px;
+  margin:0px;
+}
+#monmenu li a{
+  text-decoration:none;
+  color:#000;
+}
+#monmenu li a:hover{
+  background-color: #5cd65c;
+  color:#fff;
+}
+#monmenu li:hover{
+  background-color: #5cd65c;
+ }
+#monmenu li:hover ul.niveau2{
+  display:block;
+    color:#fff;
+}
+#monmenu li li:hover ul.niveau3{
+  display:block;
+  background-color:#5cd65c;
+  color:#fff;
+}
+</style>
+</head>
+<body>
+	<div id="monmenu">
+    <ul class="niveau1">
+      <li>Menu
+        <ul class="niveau2">
+          <li><a href= "http://www.google.com">Entrée</a></li>
+          <li class="plus"><a href= "">Plat</a>
+			  <ul class="niveau3">
+          <li><a href= "http://www.google.com">Escalope pannée</a></li>
+          <li><a href= "http://www.google.com">Rôti de veau</a></li>
+			    <li><a href= "http://www.google.com">Truite aux amandes</a></li>
+        </ul>
+          </li>
+          <li><a href= "http://www.google.com">Dessert</a></li>
+          <li><a href= "http://www.google.com">Café</a></li>
+		      <li class="plus"><a href= "">Extras</a>
+        <ul class="niveau3">
+          <li><a href= "http://www.google.com">Demander la note</a></li>
+          <li><a href= "http://www.google.com">Partir en courant</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+</body>
+</html>

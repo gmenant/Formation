@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+		<title>Le Corbeau et le Renard</title>
+		<meta name="robots" content="all"/>
+		<meta name="description" content="Modèle"/>
+		<meta name="author" content="DL2017-2018"/>
+		<link rel="icon" href="fromage-icon.png"/>
+<!--		<link href="styles.css" rel="stylesheet">
+				<script type="text/javascript" src="scripts.js"></script>-->
+		<style type="text/css">
+			/* Mes feuilles de style  */
+			body{background-color:Moccasin;}
+			h1, p {text-align:center;}
+			h2{text-align:right;}
+			p{font-size:150%;}
+			#image_entete{width:70%;}
+
+		</style>
+		<script type="text/javascript">
+		/* Mes scripts  */
+
+		</script>
+	</head>
+	<body>
+	<!-- Mes balises HTML  -->
+  
+	<center> <img id="image_entete" src="1GustaveDore.jpg"   alt="Fromage qui bouge" /></center>
+
+
+	<h1>LE CORBEAU ET LE RENARD</h1>
+		<p> Maître Corbeau, sur un arbre perché,<br/>
+			Tenait en son bec un fromage.<br/>
+			Maître Renard, par l'odeur alléché,<br/>
+			Lui tint à peu près ce langage :<br/>
+			Et bonjour, Monsieur du Corbeau,<br/>
+			Que vous êtes joli ! que vous me semblez beau !<br/>
+			Sans mentir, si votre ramage<br/>
+			Se rapporte à votre plumage,<br/>
+			Vous êtes le Phénix des hôtes de ces bois.<br/>
+			À ces mots le Corbeau ne se sent pas de joie,<br/>
+			Et pour montrer sa belle voix,<br/>
+			Il ouvre un large bec, laisse tomber sa proie.<br/>
+			Le Renard s'en saisit, et dit : Mon bon Monsieur,<br/>
+			Apprenez que tout flatteur<br/>
+			Vit aux dépens de celui qui l'écoute.<br/>
+			Cette leçon vaut bien un fromage sans doute.<br/>
+			Le Corbeau honteux et confus<br/>
+			Jura, mais un peu tard, qu'on ne l'y prendrait plus.
+		</p>
+	<h2>Jean de La Fontaine</h2>
+
+	</body>
+</html>

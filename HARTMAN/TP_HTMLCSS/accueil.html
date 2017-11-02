@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style type="text/css">
+
+/*FORMATAGE*/
+
+*{margin:0;padding:0;}
+li{list-style: none;}
+body{background-color: #DCDCDC;
+font:12px "Trebuchet MS", Arial, sans-serif;}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover{color:blue;}
+
+
+/*CORPS*/
+
+#contener   {width:80%;margin:0 10%;}
+h1          {position: absolute;
+             top:3vh;
+             left:20% ;
+             color:white;}
+#imgCoureur {width:20%;float:left;margin:5px;}
+#bandeau    {width:100%;height:20vh;}
+#pageCorp   {display:flex;
+            flex-wrap: nowrap;
+          }
+
+#formulaire{
+            background-color: #C0C0C0;
+            border-style: solid;
+            border-width: 1px;
+            margin-top: 5px;
+            }
+
+#blocArticles      {flex:3;padding:5px;}
+article            {text-align: justify;font-size: 12px;}
+article:First-Line {font-weight:bold;}
+
+footer{
+      padding: 5px;
+      font-size: 10px;
+      background-color: #778899;
+      position: absolute;
+      bottom: 0px;
+      height:10%;
+      width:80%;}
+
+/*MENUS*/
+menu{text-align:center;
+
+}
+
+#menu1{flex:1;}
+#menu1 li{background-color:#778899;
+          margin:1px 0px;
+          padding:10px;
+          color:white;}
+#menu1 li:hover{background-color:#408697;}
+
+#menu2{flex:2;}
+#menu2 li{background-color:#E0FFFF;
+          padding:5px 0px;
+          border-style: solid;
+          border-width: 1px;}
+#menu2 li:hover{background-color::;}
+</style>
+</head>
+<body>
+
+
+<div id="contener">
+  <header><img id="bandeau" src="images/Sports.jpg"/>
+  <div><h1>Association Sportive<br/> de Saint-Étienne de Beaulieu</h1></div>
+  </header>
+
+  <div id="pageCorp">
+
+  <menu id="menu1">
+    <li><a href="">Résultats</a></li>
+    <li><a href="">Informations</a></li>
+    <li><a href="">Contact</a></li>
+  </menu>
+  <div id="blocArticles">
+  <article>
+    <img id="imgCoureur" src="images/coureur1.jpg"/>
+  Bruno LE GAL a été sélectionné pour participer aux championnats du monde en moins de 69 kg NE WAZA (exclusivement sol) qui auront lieu du 28 au 30 novembre 2017 à Kyoto, au Japon.<br/>
+  Originaire de Guyane, Bruno Le Gal a été champion départemental à Kourou en 2004 en catégorie cadet. Repéré par le club de Saint-Maur, il arrive en France en 2006 où il remporte la médaille de bronze en championnat régional junior en 2006.<br/>
+  Bruno arrive à Saint-Étienne de Beaulieu en 2012 pour y poursuivre ses études d'ingénieur en arts plastiques. C'est là qu'il passe son deuxième dan de ceinture noire avant d'intégrer l'équipe de France Espoirs.
+  </article>
+  <hr style="border-top: dotted 1px;"">
+  <div id="formulaire">
+            <table>
+            <tr>
+                <td style="width:250px"><label for  ="prenom">Votre nom</label></td>
+                <td><input type ="text" placeholder="Entrez votre nom" id="prenom" name="prenom"/></td>
+            </tr><tr>
+                <td><label for  ="nom" >Votre prenom</label></td>
+                <td><input type ="text" placeholder="Entrez votre prenom" id="nom" name="nom"/></td>
+            </tr><tr>
+                <td><label for  ="psw">Votre date de naissance</label></td>
+                <td><input type ="date" "/></td>
+            </tr>
+                <td>&nbsp;</td>
+                <td><input style="padding:0 5px;" type ="submit" value="Valider"/></td>
+            </table>
+
+
+  </div>
+</div>
+
+<menu id="menu2">
+<li><a href="">Réunions et assemblées générales</a></li>
+<li><a href="">Dernières mises à jour</a></li>
+<li><a href="">Fiche d'inscription</a></li>
+<li><a href="">Bulletin d'informations</a></li>
+<li><a href="">Présentation des activités</a></li>
+<li><a href="">Activités des sections</a></li>
+<li><a href="">Espace utilisateurs</a></li>
+<li><a href="">Vacances scolaires 2017-2018</a></li>
+<li><a href="">Adobe Reader</a></li>
+<li><a href="">Météo à Poitiers</a></li>
+
+</menu>
+</div>
+<footer>Copyright Maison de la Formation, Poitiers 2017-2018</footer>
+</div>
+</body>
+</html>

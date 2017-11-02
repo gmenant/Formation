@@ -1,0 +1,19 @@
+Procedure Verif(R) Reel
+Debut
+	if R<0
+	ecrire ("c'est positif")
+	else if R>0
+	ecrire ("c'est négatif")
+	else 
+	ecrire ("c'est = 0")
+Fin
+
+
+Algorithme
+VARIABLES x
+
+DEBUT
+
+Verif(x)
+
+FIN

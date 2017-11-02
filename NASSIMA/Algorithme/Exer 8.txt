@@ -1,0 +1,23 @@
+ALGORITHME
+
+VARIABLES
+	M=4 reel
+	N=4 reel
+	Somme reel 
+TABLEAU
+	tab[M,N] reel
+DEBUT
+
+	Somme = O
+
+POUR i=0 A M-1 FAIRE
+ POUR j=0 A N-1 FAIRE
+  Lire tab[M,N]
+  |	SI tab[i=j]
+  	Somme = tab[M,N]+Somme
+ FIN POUR
+FIN POUR
+
+
+
+FIN

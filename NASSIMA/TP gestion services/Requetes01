@@ -1,0 +1,26 @@
+Req01
+SELECT * FROM service
+Req02
+SELECT * FROM service WHERE Num_serv BETWEEN 2 AND 4
+Req03
+SELECT * FROM personnel WHERE pre_sal LIKE "S%"
+Req04
+SELECT * FROM personnel WHERE Date_ent_sal LIKE "%82"
+Req05
+SELECT * FROM personnel WHERE pre_sal LIKE ("D%" OR "C%")
+Req06
+SELECT pre_sal, nom_sal FROM personnel WHERE pre_sal LIKE "M%" AND nom_sal LIKE "G%"
+Req07
+SELECT DISTINCT Num_serv FROM PERSONNEL
+Req08
+SELECT * FROM personnel ORDER BY `Nom_sal`
+Req09
+SELECT MAX(Salair_sal) FROM personnel
+Req10
+SELECT * FROM personnel  WHERE primes_sal = 0
+Req11
+SELECT DISTINCT Sexe_sal FROM personnel
+Req12
+SELECT DISTINCT Nom_sal, Pre_sal FROM personnel
+Req13
+SELECT * FROM personnel WHERE Salaire_sal>=2000

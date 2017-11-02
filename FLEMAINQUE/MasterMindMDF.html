@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta name="title" content="Mastermind">
+	<meta name="author" content="F. Lemainque">
+	<meta name="version" content="2.0">
+	<meta name="organisation" content="MDF86">
+	<title>Mastermind</title>
+    <script type="text/javascript" src="prefixfree.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="mastermind.css">
+    <script type="text/javascript" src="mastermind.js"></script>
+    <title>MasterMind en HTML5</title>
+</head>
+<body onload="init();">
+<div class="conteneur">
+    <h1>MasterMind</h1>
+	<h3>Editions Orignal</h3>
+    <p>Le c&eacute;l&egrave;bre jeu &eacute;crit en HTML5, CSS3 et JavaScript.
+    </p>
+	<br />
+	<div id="control">
+		<input type="radio" name="color" id="rg" value="rg" checked=true><input type="radio" name="color" id ="bl" value="bl">
+		<input type="radio" name="color" id="ja" value="ja"><input type="radio" name="color" id ="ve" value="ve">
+		<input type="radio" name="color" id="or" value="or"><input type="radio" name="color" id="cy" value="cy">
+		<label for="rg" id="lblrg" onclick="nc=0"></label><label for="bl" id="lblbl" onclick="nc=1"></label>
+		<label for="ja" id="lblja" onclick="nc=2"></label><label for="ve" id="lblve" onclick="nc=3"></label>
+		<label for="or" id="lblor" onclick="nc=4"></label><label for="cy" id="lblcy" onclick="nc=5"></label>
+	</div>
+     <table id="jeu">
+	</table>
+	<br />
+	<table id="sol">
+		<tr>
+			<td><div class="gc"></div></td>
+			<td><div class="gc"></div></td>
+			<td><div class="gc"></div></td>
+			<td><div class="gc"<</div></td>
+		</tr>
+	</table>
+    <div id="ctrl">
+	<br>
+		<A href='#openModal'>Instructions</a>
+		<br /><br />
+		<input id="btnEfface" value=" Effacer ligne " onclick="effaceLigne()" type="button">
+		<br /><br />
+		<input id="btnPropo" value=" Tester " onclick="verifier()" type="button">
+		<br /><br />
+		<input id="btnReset" value=" Recommencer " onclick="reset()" type="button">
+		<br /><br />
+		<!-- <input id="btnsoluce" value=" Solution " onclick="solution()" type="button"> -->
+   	</div>
+	<div id="openModal" class="modalDialog">
+        <div>
+            <a href="#fermer" title="Fermer" class="fermer">X</a>
+            <h2>MasterMind :</h2>
+            <p>Ceci est une mise en oeuvre HTML5 du tr&egrave;s classique MasterMind. L'ordinateur a cr&eacute;&eacute; au hasard 
+			une combinaison de quatre couleurs. </p>
+            <p>
+            Votre mission consiste à déterminer cette combinaison en affectant une couleur &agrave; chaque cercle de la 
+			ligne active. S&eacute;l&eacute;ctionnez une couleur dans la palette de gauche puis cliquez sur le cercle 
+			auquel vous voulez affecter cette couleur.
+			</p>
+            <p>
+                Les couleurs ne sont pas forc&eacute;ment uniques : <div class="pc bl"></div><div class="pc bl"></div><div class="pc ve"></div><div class="pc bl"></div> est une combinaison valide.<br />
+                Pour vérifier votre proposition, cliquez sur Tester. Votre score appara&icirc;t dans les petits cercles &agrave; droite de la ligne.<br />
+                <div class="pc noir"></div> : couleur correcte &agrave; la bonne position ;<br />
+                <div class="pc blanc"></div> : couleur correcte pas &agrave; la bonne position.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

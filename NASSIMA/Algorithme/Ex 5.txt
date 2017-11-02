@@ -1,0 +1,30 @@
+
+POUR i=0 a Taille-1 FAIRE
+
+  POUR i=i+1 a Taille-1 FAIRE
+	if Tab[i]<Max
+		alse Tab[i]>Max
+		Max=Tab[i]
+		
+  FIN POUR
+	TAB[i]=Max
+
+FIN POUR
+
+
+
+Algorithme
+Declaration
+Tableau
+	tableau Tab[N]: entier
+Variables
+	j :  entier
+	i : entier
+	posimax : i
+DEBUT
+	Pour i DE 0 à N-1 FAIRE
+		Pour j de i+1 à N-1 FAIRE
+			SI Tab[j]>Tab[posimax]
+
+
+FIN

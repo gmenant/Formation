@@ -1,0 +1,28 @@
+PROCEDURE
+
+DEBUT
+
+
+
+tri_tableau(tableau[N])
+ 
+PROCEDURE
+	TABLEAU tableau(tableau[]:entier):
+	VARIABLE i,N,j temp,posimaxi:entier
+
+	POUR i = 0 A Maxi-2 FAIRE
+	posimax = i
+	POUR j= i+1 A Maxtableau-1 FAIRE
+		SI tableau(j)>tableau(posimax) ALORS
+			posimax = j
+		FIN SI
+	FIN POUR
+	temp = tableau(posimax)
+	tableau(posimax)=tableau(i)
+	tableau(i)=temp
+ FIN POUR
+
+
+
+
+FIN
