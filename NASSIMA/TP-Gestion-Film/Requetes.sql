@@ -52,13 +52,14 @@ SELECT nom,prenom,AVG(salaire) AS salaireMoyen FROM Personne INNER JOIN Joue ON 
 04
 SELECT COUNT(Film.id) FROM Film INNER JOIN Personne ON Personne.id=Film.idRealisateur WHERE pays='angleterre'
 05
-SELECT Personne.prenom, Personne.nom FROM Personne
+SELECT Personne.prenom, Personne.nom,COUNT(*) FROM Personne
 INNER JOIN Joue ON Personne.id=Joue.idActeur
 INNER JOIN Film ON Joue.idFilm=Film.id
 INNER JOIN Genre ON Film.idGenre=Genre.id
-GROUP BY Personne.nom HAVING COUNT(type="comique")<2
+WHERE type="comedie" GROUP BY nom HAVING nombre_acteur>2;
 06
 SELECT nom, prenom,type,AVG(nbSpectateurs) FROM Film
 INNER JOIN Genre ON Film.idGenre=Genre.id
 INNER JOIN Personne ON Personne.id=Film.idRealisateur
 GROUP BY type,nom;
+
