@@ -63,3 +63,7 @@ INNER JOIN Genre ON Film.idGenre=Genre.id
 INNER JOIN Personne ON Personne.id=Film.idRealisateur
 GROUP BY type,nom;
 
+
+SELECT titre FROM Film WHERE type IN(
+SELECT type FROM Genre)
+
