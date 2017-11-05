@@ -1,0 +1,7 @@
+SELECT nom FROM recette WHERE temps<1h
+
+SELECT nom FROM recette WHERE ingredient IN (SELECT nom FROM ingredient WHERE nom = lait);
+
+SELECT nom FROM recette WHERE nom IN (SELECT nom FROM ingredient WHERE nom = lait) AND temps FROM recette < 30min;
+
+SELECT nom FROM recette WHERE type IN (SELECT type FROM ingredient WHERE type = liquide AND unité < 50 cl);

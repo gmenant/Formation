@@ -1,0 +1,33 @@
+1
+INSERT INTO F (`NumF`,`NomF`,`Statut`,`VilleF`)
+VALUES ('1','fournisseur1','client','Paris');
+2
+DELETE FROM P WHERE Couleur='noir' AND NumP BETWEEN 100 AND 1999;
+3
+UPDATE F SET F.VilleF='Toulouse' WHERE NumF='3';
+4
+SELECT NumU, NomU, VilleU FROM U;
+5
+SELECT NumU, NomU, VilleU FROM U WHERE VilleU='Paris';
+6
+SELECT NumF FROM F WHERE NumU = (SELECT NumU FROM U WHERE NumU=2) AND NumP = (SELECT NumP FROM U WHERE NumP=100);
+7
+SELECT NomP, Couleur FROM P WHERE NumF = (SELECT NumF FROM F WHERE (SELECT NumP FROM P WHERE NumP=2));
+8
+SELECT NumF FROM F WHERE NumU = (SELECT NumU FROM U WHERE =2) AND Couleur IN (SELECT Couleur FROM P WHERE Couleur='rouge')
+9
+SELECT NomF FROM F WHERE 
+		VilleU = 
+		(SELECT VilleU FROM U WHERE VilleU=Paris OR VilleU=Creteil) 
+		IN
+		(SELECT VilleF FROM F WHERE Couleur='rouge');
+10
+SELECT NumP,VilleU,VilleF From P WHERE VilleU = (SELECT VilleU FROM U WHERE VilleF =(SELECT VilleF FROM F));
+11
+SELECT NumP,VilleU,VilleF From P WHERE VilleU = (SELECT VilleU FROM U WHERE VilleF =(SELECT VilleF FROM F WHERE VilleF="Paris"));
+12
+SELECT NumU, VilleF From U WHERE  VilleU <> (SELECT VilleF FROM F);
+13
+SELECT NumF FROM F WHERE NumU IN (SELECT NumU FROM U WHERE NumU=2 OR NumU=3)
+14
+SELECT NumU FROM U WHERE NomF IN (SELECT NomF FROM F WHERE NumP IN(SELECT NumP FROM P WHERE EXISTS Nump=3)); 
